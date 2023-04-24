@@ -1,10 +1,20 @@
 :root {
+    //colors
     --primary-color: var(--color-green-500);
     --primary-color-dark: var(--color-green-700);
     --primary-color-light: var(--color-green-300);
+
+    --background-color: var(--color-white-500);
+    --background-color-dark: var(--color-white-700);
+    --background-color-light: var(--color-white-300);
+
+    --content-color: var(--color-grey-500);
+    --content-color-dark: var(--color-grey-700);
+    --content-color-light: var(--color-grey-300);
 }
 
 :root {
+    //colors
     --color-green-100: #D1F2D4;
     --color-green-200: #B2EAB7;
     --color-green-300: #93E19A;
@@ -14,4 +24,41 @@
     --color-green-700: #53C95B;
     --color-green-800: #49C351;
     --color-green-900: #37B93F;
+
+    --color-white-100: #fafafa;
+    --color-white-200: #f7f7f7;
+    --color-white-300: #f4f4f4;
+    --color-white-400: #f1f1f1;
+    --color-white-500: #efefef;
+    --color-white-600: #ededed;
+    --color-white-700: #ebebeb;
+    --color-white-800: #e8e8e8;
+    --color-white-900: #e4e4e4;
+
+    --color-grey-100: #efefef;
+    --color-grey-200: #e4e4e4;
+    --color-grey-300: #d9d9d9;
+    --color-grey-400: #d1d1d1;
+    --color-grey-500: #c9c9c9;
+    --color-grey-600: #c3c3c3;
+    --color-grey-700: #bcbcbc;
+    --color-grey-800: #b5b5b5;
+    --color-grey-900: #a9a9a9;
+
+    //fonts
+    --font-size-very-small: 1.2rem;
+    --font-size-small: 1.4rem;
+    --font-size-medium: 1.6rem;
+    --font-size-big: 1.8rem;
+    --font-size-very-big: 2.4rem;
+    --font-size-large: 3.2rem;
+
+    //font font-weight
+    --font-weight-bold: 800;
+    --font-weight-regular: 400;
+    --font-weight-medium: 600;
+
+    //border radius
+    --small-border-radius: 16px;
+    --big-border-radius: 24px;
 }
