@@ -11,7 +11,54 @@
 <body>
   <div id="home-page">
     <div class="checkout-card-component">
-      Checkout Card Component Content
+      <div class="checkout-card-component__order">
+          <h1 class="checkout-card-component__order-type">Order summary</h1>
+        <span class="checkout-card-component__order-query">Check if your order matches</span>
+      </div>
+      
+      <div class="checkout-card-component__product-line" data-product-id="12345">
+        <div class="checkout-card-component__product-info">
+            <div class="checkout-card-component__product-image-container">
+                <img src="/assets/icons/spotify-icon.svg" alt="product cover" />
+            </div>
+            <div class="checkout-card-component__product-details">
+                <div class="checkout-card-component__product-title">Individual</div>
+                <div class="checkout-card-component__product-desc">1 account</div>
+            </div>
+        </div>
+        <div class="checkout-card-component__product-price margin">
+            $10.00
+            <span class="checkout-card-component__per-month-annotation">/month</span>
+        </div>
+    </div>
+    <div class="checkout-card-component__summary-container">
+        <div class="checkout-card-component__product-summary">
+          <span class="checkout-card-component__summary">Product summary:</span>
+          <div class="checkout-card-component__product-price">
+            $10.00
+            <span class="checkout-card-component__per-month-annotation">/month</span>
+        </div>
+        </div>
+
+        <div class="checkout-card-component__product-total">
+          <span class="checkout-card-component__total">Total:</span>
+          <div class="checkout-card-component__product-price">
+            $10.00
+            <span class="checkout-card-component__per-month-annotation">/month</span>
+        </div>
+        </div>
+    </div>
+    <div class="checkout-card-component__buttons">
+      <button class="btn-primary" data-loading="0">
+        <div class="btn-primary__text">Confirm and pay</div>
+        <!-- <div class="btn-primary__loader">
+            <img src="/assets/icons/animated-loader.svg" alt="Loading…" />
+        </div> -->
+    </button>
+    <button class="btn-secondary">Cancel order</button>
+    </div>
+        
+      
     </div>
   </div>
 

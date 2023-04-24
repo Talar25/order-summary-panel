@@ -1,3 +1,93 @@
 button {
-   
+    &.btn-primary,
+    &.btn-secondary {
+        display: block;
+        flex: 1;
+
+        font-size: var(--font-size-medium);
+        padding: 18px;
+        border-radius: 60px;
+
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: var(--font-weight-bold);
+
+        transition: 0.2s all;
+    }
+
+    &.btn-primary {
+        border: none;
+        background-color: var(--primary-color);
+
+        &:hover {
+            background-color: var(--primary-color-dark); 
+        }
+
+        &:active {
+            background-color: var(--color-green-900); 
+        }
+    }
+
+    &.btn-secondary {
+        border: 1px solid var(--background-color);
+        color: var(--background-color);
+        background-color: inherit;
+
+        &:hover {
+            border: 1px solid var(--background-color-dark);
+            color: var(--background-color-dark);
+        }
+
+        &:active {
+            border: 1px solid var(--color-grey-900);
+            color: var(--color-grey-900);
+        }
+    }
+
+    &[data-loading="1"] {
+        .btn-primary__text {
+            display: none;
+            height: 65%;
+        }
+    
+        .btn-primary__loader {
+            display: block;
+    
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    &:disabled {
+        opacity: 0.5;
+
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+
+    &.btn-primary {
+        &:not(:disabled):hover {
+            cursor: pointer;
+            background-color: var(--primary-color-dark);
+        }
+    
+        &[data-loading='1'] {
+            &:hover {
+                cursor: not-allowed;
+                background-color: var(--primary-color);
+            }
+        }
+        
+    
+        &.btn-secondary {
+            &:not(:disabled):hover {
+                cursor: pointer;
+                background-color: var(--background-color-dark);
+            }
+        }
+    }
 }

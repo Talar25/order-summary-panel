@@ -1,3 +1,115 @@
 .checkout-card-component {
-   
+    position: absolute;
+    top: 10%;
+   padding: var(--regular-distance);
+   background-color: #fff;
+   width: 55rem;
+   border-radius: var(--big-border-radius);
+   color: var(--on-content-color);
+
+   &__order {
+    margin-bottom: var(--regular-distance);
+
+    &-type{
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-bold);
+    }
+
+    &-query{
+        font-size: var(--font-size-medium);
+        font-weight: var(--font-weight-regular);
+        opacity: 0.5;
+    }
+   }
+
+   &__product-line{
+    border-bottom: 1px solid var(--background-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    
+   }
+
+   &__product-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+   }
+
+   &__product-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--small-distance);
+    background-color: var(--background-color-light);
+    border-radius: var(--small-border-radius);
+
+    & img {
+        width: 40px;
+        height: 40px;
+    }
+   }
+
+   &__product-title {
+    font-size: var(--font-size-big);
+    margin-bottom: 8px;
+   }
+
+   &__product-desc {
+    font-size: var(--font-size-small);
+    opacity: 0.5;
+   }
+
+   &__product-price {
+    font-size: var(--font-size-big);
+
+    & span {
+        opacity: 0.5;
+    }
+    
+    &.margin {
+        margin-bottom: 21px;
+    };
+   }
+
+   &__summary-container {
+    margin-top: 24px;
+   }
+
+   &__product-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-size-medium);
+    margin-bottom: 24px;
+
+    & span {
+        opacity: 0.5;
+    }
+    }
+
+    &__total {
+    color: var(--on-content-color);
+    }
+
+    &__product-total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: var(--font-size-big);
+        margin-bottom: 48px;
+
+        }
+
+    &__per-month-annotation {
+        opacity: 0.5;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 }
