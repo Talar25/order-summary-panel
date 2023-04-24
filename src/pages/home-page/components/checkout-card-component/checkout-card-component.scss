@@ -3,7 +3,7 @@
     top: 10%;
    padding: var(--regular-distance);
    background-color: #fff;
-   width: 55rem;
+   width: 52rem;
    border-radius: var(--big-border-radius);
    color: var(--on-content-color);
 
@@ -13,6 +13,7 @@
     &-type{
         font-size: var(--font-size-large);
         font-weight: var(--font-weight-bold);
+        margin-bottom: 12px;
     }
 
     &-query{
@@ -67,6 +68,7 @@
 
     & span {
         opacity: 0.5;
+        font-size: var(--font-size-very-small);
     }
     
     &.margin {
@@ -83,10 +85,11 @@
     align-items: center;
     justify-content: space-between;
     font-size: var(--font-size-medium);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 
     & span {
         opacity: 0.5;
+        
     }
     }
 
@@ -98,13 +101,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size: var(--font-size-big);
+        font-size: var(--font-size-very-big);
         margin-bottom: 48px;
 
+        & .checkout-card-component__product-price {
+            font-weight: 700;
+            font-size: calc(var(--font-size-very-big)*1.05);
+        }
         }
 
     &__per-month-annotation {
         opacity: 0.5;
+        font-size: var(--font-size-very-small);
     }
 
     &__buttons {
